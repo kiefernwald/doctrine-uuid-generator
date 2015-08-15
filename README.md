@@ -15,7 +15,14 @@ You can just use it as CustomIdGenerator. If you are using Annotations, your cod
 
 ```php
 <?php
+
 // ...
+
+use Doctrine\ORM\Mapping\Entity;
+use Doctrine\ORM\Mapping\Column;
+use Doctrine\ORM\Mapping\Id;
+use Doctrine\ORM\Mapping\GeneratedValue;
+use Doctrine\ORM\Mapping\CustomIdGenerator;
 
 /**
  * Class MyAwesomeEntity
