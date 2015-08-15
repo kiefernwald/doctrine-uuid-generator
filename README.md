@@ -13,24 +13,27 @@ It is recommended to use Composer. You can run the following command to add the 
 
 You can just use it as CustomIdGenerator. If you are using Annotations, your code should like this:
 
-    // ...
+```php
+<?php
+// ...
 
+/**
+ * Class MyAwesomeEntity
+ *
+ * @Entity
+ * ...
+ */
+class MyAwesomeEntity
+{
     /**
-     * Class MyAwesomeEntity
-     *
-     * @Entity
-     * ...
+     * @var string $uuid
+     * @Column(name="uuid", type="string")
+     * @Id
+     * @GeneratedValue(strategy="CUSTOM")
+     * @CustomIdGenerator(class="Kiefernwald\DoctrineUuid\Doctrine\ORM\UuidGenerator")
      */
-    class MyAwesomeEntity
-    {
-        /**
-         * @var string $uuid
-         * @Column(name="uuid", type="string")
-         * @Id
-         * @GeneratedValue(strategy="CUSTOM")
-         * @CustomIdGenerator(class="Kiefernwald\DoctrineUuid\Doctrine\ORM\UuidGenerator")
-         */
-        protected $uuid;
+    protected $uuid;
 
-        // ...
-    }
+    // ...
+}
+```
