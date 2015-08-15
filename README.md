@@ -1,7 +1,7 @@
 # Doctrine UUID Generator library
 Enables support for UUIDv4 as IDs of Doctrine entities.
 
-UUIDv4 creation is based on the awesome [ramsey/uuid](https://github.com/ramsey/uuid) library. Currently this library only supports the UUIDs as strings.
+UUIDv4 creation is based on the awesome [ramsey/uuid](https://github.com/ramsey/uuid) library. Currently only UUIDs as strings are supported.
 
 ## Installation
 
