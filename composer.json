@@ -1,7 +1,7 @@
 {
   "name": "kiefernwald/doctrine-uuid-generator",
   "type": "library",
-  "description": "A library to integrate ContentCentral data into a php based project.",
+  "description": "Use UUIDv4 as generated id in Doctrine ORM.",
   "keywords": ["uuid", "doctrine", "identifier", "auto"],
   "homepage": "https://github.com/kiefernwald/doctrine-uuid-generator",
   "license": "MIT",
